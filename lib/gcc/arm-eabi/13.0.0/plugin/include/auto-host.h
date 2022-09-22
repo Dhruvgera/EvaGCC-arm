@@ -364,7 +364,7 @@
 /* Define to the level of your assembler's compressed debug section support.
    */
 #ifndef USED_FOR_TARGET
-#define HAVE_AS_COMPRESS_DEBUG 2
+#define HAVE_AS_COMPRESS_DEBUG 1
 #endif
 
 
@@ -1622,7 +1622,7 @@
 
 /* Define to the level of your linker's compressed debug section support. */
 #ifndef USED_FOR_TARGET
-#define HAVE_LD_COMPRESS_DEBUG 3
+#define HAVE_LD_COMPRESS_DEBUG 1
 #endif
 
 
@@ -2097,6 +2097,13 @@
 /* Define to 1 if `vfork' works. */
 #ifndef USED_FOR_TARGET
 #define HAVE_WORKING_VFORK 1
+#endif
+
+
+/* Define if your assembler supports AIX debug frame section label reference.
+   */
+#ifndef USED_FOR_TARGET
+/* #undef HAVE_XCOFF_DWARF_EXTRAS */
 #endif
 
 
